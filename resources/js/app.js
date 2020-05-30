@@ -21,6 +21,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+Vue.component('app', require('./App.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -30,8 +31,4 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 import App from './App.vue';
 const app = new Vue({
     el: '#app',
-    components: {
-        App
-    },
-    render: h => h(App)
 });

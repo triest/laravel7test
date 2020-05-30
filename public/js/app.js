@@ -51577,6 +51577,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
+Vue.component('app', __webpack_require__(/*! ./App.vue */ "./resources/js/App.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -51585,13 +51586,7 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 
 
 var app = new Vue({
-  el: '#app',
-  components: {
-    App: _App_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
-  },
-  render: function render(h) {
-    return h(_App_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
-  }
+  el: '#app'
 });
 
 /***/ }),

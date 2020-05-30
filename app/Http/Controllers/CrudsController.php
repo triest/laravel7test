@@ -18,7 +18,7 @@ class CrudsController extends Controller
     public function create(Generator $faker)
     {
         $crud = new Crud();
-        $crud->name = $faker->lexify('????????');
+        $crud->name = $faker->lastName('woman');
         $crud->color = $faker->boolean ? 'red' : 'green';
         $crud->save();
         return response($crud->jsonSerialize(), Response::HTTP_CREATED);
